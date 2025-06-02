@@ -1,0 +1,27 @@
+.category-section {
+  margin: 40px 0;
+  padding: 0 32px;
+}
+
+.category-section h2 {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.card-row {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+.card-row::-webkit-scrollbar {
+  height: 8px;
+}
+
+.card-row::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}

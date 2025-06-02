@@ -1,0 +1,92 @@
+.top-ten-section {
+  margin: 40px 0;
+  padding: 0 32px;
+  position: relative;
+}
+
+.top-ten-header {
+  margin-bottom: 24px;
+}
+
+.top-ten-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.top-ten-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  margin: 8px 0 0;
+  font-weight: 500;
+}
+
+.top-ten-row {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 24px;
+  gap: 16px;
+  scrollbar-width: none; /* Para Firefox */
+}
+
+.top-ten-row::-webkit-scrollbar {
+  display: none; /* Para Chrome/Safari */
+}
+
+.top-ten-card {
+  position: relative;
+  display: inline-block;
+  min-width: 150px;
+}
+
+.top-number {
+  position: absolute;
+  bottom: -15px;
+  left: -10px;
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.15);
+  z-index: 2;
+  font-family: 'Arial Black', sans-serif;
+  pointer-events: none;
+}
+
+.top-number span {
+  position: relative;
+}
+
+.trend-indicator {
+  position: absolute;
+  font-size: 1.2rem;
+  right: -15px;
+  top: 15px;
+  background: #00b2ff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trend-indicator.up {
+  background: #00b2ff;
+}
+
+.trend-indicator.down {
+  background: #ff0000;
+}
+
+
+.top-ten-card .card {
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.top-ten-card .card:hover {
+  transform: scale(1.05);
+}
